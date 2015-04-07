@@ -1,9 +1,9 @@
 Package: initproject
 Type: Package
-Title: What the package does (short line)
+Title: Tools for starting a new project
 Version: 1.0
 Date: 2015-04-02
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Matthew Baggott
+Maintainer: Matthew Baggott <matt@baggott.net>
+Description: Contains simple functions to create standard directories and load their paths into memory.
+License: CC0 1.0 Universal
