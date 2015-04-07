@@ -15,16 +15,16 @@ makeDirs <- function(projectname, codelocation="coding"){
     cat(paste0("Created ",projectname," dir.\n"))
   }
   exist_already <- dir(projectdir)
-  if(! "datadir" %in% exist_already){
-    dir.create("datadir")
-    cat("Created datadir.\n")
+  if(! "data" %in% exist_already){
+    dir.create("data")
+    cat("Created data dir.\n")
   }
-  if(! "rdir" %in% exist_already){
-    dir.create("rdir")
-    cat("Created rdir.\n")
+  if(! "r" %in% exist_already){
+    dir.create("r")
+    cat("Created r dir.\n")
   }
-  if(! "resultsdir" %in% exist_already){
-    dir.create("resultsdir")
-    cat("Created resultsdir.\n")    
+  if(! "results" %in% exist_already){
+    dir.create("results")
+    cat("Created results dir.\n")    
   }
 }
