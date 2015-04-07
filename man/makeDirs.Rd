@@ -1,19 +1,19 @@
-\name{establishPaths}
-\alias{establishPaths}
+\name{makeDirs}
+\alias{makeDirs}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-establishPaths
+makeDirs
 }
 \description{
-Creates four objects in the global environment containing the paths to four standard project folders: datadir, libdir, rdir, and resultsdir  
+Creates a project folder in a standard location, then creates standard subfolders (datadir, rdir, resultsdir) inside
 }
 \usage{
-establishPaths(projectname, codelocation = "coding")
+makeDirs(projectname, codelocation = "coding")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{projectname}{ 
-the name of the project, should also be the directory in codelocation that contains the current project
+the name of the new project, will also be the directory in codelocation that contains the current project
 }
   \item{codelocation}{
 the name of the directory in ~/Documents/ that contains all project directories
@@ -45,11 +45,7 @@ Matthew Baggott
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-
-establishPaths(projectname="fall_sales_analysis", codelocation = "coding") 
-datadir
-# "~/Documents/coding/fall_sales_analysis/data/"
-
+makeDirs(projectname="fall_sales_analysis", codelocation = "coding") 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
